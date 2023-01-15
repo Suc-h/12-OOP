@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _11oop
 {
@@ -26,30 +27,30 @@ namespace _11oop
             TimeSpan dny = DateTime.Now - datumVyroby;
             if (dny.TotalDays > minTrvanlivost)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
             
         }
         public virtual double CenaDPH()
         {
-            double a = cena / 100;
-            double cenadph = a * 121;
-            return cenadph;
+            
+
+            return (Convert.ToDouble(cena) / 100) * 121;
         }
 
         public override string ToString()
         {
-            if (Splnuje() == true)
+            if (Splnuje() == false)
             {
                 return nazev + "s datumem výroby:" + datumVyroby + "s cenou: " + cena + " s cenou s DPH: " + CenaDPH() + " nesplňuje minimální trvanlivost ";
             }
             else
             {
-                return nazev + "s datumem výroby:" + datumVyroby + "s cenou: " + cena + " s cenou s DPH: " + CenaDPH() + " splňuje minimální trvanlivost ";
+                return nazev + "s datumem výroby: " + datumVyroby + " s cenou: " + cena + "kč s cenou s DPH: " + CenaDPH() + "kč  splňuje minimální trvanlivost! ";
             }
         }
     }

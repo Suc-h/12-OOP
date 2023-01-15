@@ -8,28 +8,34 @@ namespace _11oop
 {
     class Produkt : Zbozi
     {
-        bool lzezlevnit;
-        public Produkt(bool zlezlevnit,string nazev, int cena, DateTime datumVyroby, int minTrvanlivost) : base(nazev, cena, datumVyroby, minTrvanlivost)
+        int lzezlevnit;
+        public Produkt(int zlezlevnit,string nazev, int cena, DateTime datumVyroby, int minTrvanlivost) : base(nazev, cena, datumVyroby, minTrvanlivost)
         {
-            this.lzezlevnit = lzezlevnit;
+            this.lzezlevnit = zlezlevnit;
         }
 
         public override double CenaDPH()
         {
-            
-            if(Splnuje()==true)
+            if(lzezlevnit==1)
             {
-                double cenadphlater = base.CenaDPH() / 100;
-                double cenadphnow = cenadphlater * 60;
-                return cenadphnow;
+
+           
+                if(Splnuje()==true)
+                {
+                    
+                 return (base.CenaDPH() / 100) * 60;
+             
+                }
+                else
+                {
+                return base.CenaDPH();
+                }
             }
-           /*else
+            else
             {
-                double cenadphlater = base.CenaDPH() / 100;
-                double cenadphnow = cenadphlater * 60;
-                return cenadphnow;
-            }*/
-            
+                return base.CenaDPH();
+            }
+
         }
     }
 }

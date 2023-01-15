@@ -1,0 +1,10 @@
+C:\Users\fokus\Source\Repos\12-OOP\11oop\bin\Debug\11oop.exe.config
+C:\Users\fokus\Source\Repos\12-OOP\11oop\bin\Debug\11oop.exe
+C:\Users\fokus\Source\Repos\12-OOP\11oop\bin\Debug\11oop.pdb
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\11oop.csproj.AssemblyReference.cache
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\_11oop.Form1.resources
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\_11oop.Properties.Resources.resources
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\11oop.csproj.GenerateResource.cache
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\11oop.csproj.CoreCompileInputs.cache
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\11oop.exe
+C:\Users\fokus\Source\Repos\12-OOP\11oop\obj\Debug\11oop.pdb
